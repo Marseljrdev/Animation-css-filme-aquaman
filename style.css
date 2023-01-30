@@ -1,0 +1,67 @@
+body{
+    background-image: url(./assets/atlantis-aquaman-1200x633.jpg);
+    /* background-image: url(./assets/gifaqua3.gif); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.logo-marvel{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: exemplo2 4s 1;
+}
+
+.imgMarvel{
+    margin-top: -150px;
+    
+}
+
+@keyframes exemplo2 {
+    from{
+        transform: matrix(1, 2, 3, 4, 5, 6);
+    }
+
+}
+
+.area-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -200px;
+    opacity: 0;
+    animation: exemplo 5s infinite;
+    animation-delay: 4s;
+}
+
+
+.area-images .imgAqua {
+    height: 850px;
+}
+
+.area-images .imgLogo{
+    margin-top: -500px;
+}
+
+
+
+@keyframes exemplo {
+    0%{
+        opacity: 0;
+        transform: scale(30px);
+    }
+
+    50%{
+        opacity: 0.5;
+        transform: scale(60px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(90px);
+    }
+}
+
